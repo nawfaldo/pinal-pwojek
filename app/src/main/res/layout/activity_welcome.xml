@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".ui.authentication.WelcomeActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:src="@drawable/happy_face"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ArtPoi"
+        android:fontFamily="@font/ubuntu_bold"
+        android:textSize="30sp"
+        android:textColor="@color/appTheme"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:fontFamily="@font/ubuntu_regular"
+        android:textColor="@color/black"
+        android:text="Thanks for joining us, Traveler.\nHere's our top artist"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_marginStart="15dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:id="@+id/rl_welcome_1"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_welcome_image_1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/daffakhpp"/>
+
+                <TextView
+                    android:id="@+id/tv_welcome_username_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Dafkh18"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:layout_toRightOf="@id/iv_welcome_image_1"/>
+
+                <TextView
+                    android:id="@+id/tv_welcome_bio_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_welcome_username_1"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/iv_welcome_image_1"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:text="イラストの評価、\nてます！"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@id/tv_welcome_bio_1">
+
+                    <TextView
+                        android:id="@+id/btn_welcome_follow_1"
+                        android:layout_width="80dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:text="Follow"
+                        android:textSize="13dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/white"
+                        android:padding="5dp"
+                        android:background="@drawable/bg_red_button"/>
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/dots"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/btn_welcome_follow_1"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_toRightOf="@id/rl_welcome_1">
+
+                <ImageView
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/daffakh2"/>
+
+                <ImageView
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/daffakh1"/>
+
+                <ImageView
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/daffakh3"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <RelativeLayout
+                android:id="@+id/rl_welcome_2"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_welcome_image_2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/rakhapp"/>
+
+                <TextView
+                    android:id="@+id/tv_welcome_username_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Ra76kha"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:layout_toRightOf="@id/iv_welcome_image_2"/>
+
+                <TextView
+                    android:id="@+id/tv_welcome_bio_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="イラストレーター、おります"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:layout_below="@+id/tv_welcome_username_2"
+                    android:layout_toRightOf="@id/iv_welcome_image_2"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@id/tv_welcome_bio_2">
+
+                    <TextView
+                        android:id="@+id/btn_welcome_follow_2"
+                        android:layout_width="80dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:text="Follow"
+                        android:textSize="13dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/white"
+                        android:padding="5dp"
+                        android:background="@drawable/bg_red_button"/>
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/dots"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/btn_welcome_follow_2"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_toRightOf="@id/rl_welcome_2">
+
+                <ImageView
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/rakha1"/>
+
+                <ImageView
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/rakha2"/>
+
+                <ImageView
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/rakha3"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <RelativeLayout
+                android:id="@+id/rl_welcome_3"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_welcome_image_3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/amarpp"/>
+
+                <TextView
+                    android:id="@+id/tv_welcome_username_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/iv_welcome_image_3"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:text="4mmartv"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tv_welcome_bio_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_welcome_username_3"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/iv_welcome_image_3"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:text="しています。\nはよく"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@id/tv_welcome_bio_3">
+
+                    <TextView
+                        android:id="@+id/btn_welcome_follow_3"
+                        android:layout_width="80dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:text="Follow"
+                        android:textSize="13dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/white"
+                        android:padding="5dp"
+                        android:background="@drawable/bg_red_button"/>
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/dots"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/btn_welcome_follow_3"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_toRightOf="@id/rl_welcome_3">
+
+                <ImageView
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/ammar1"/>
+
+                <ImageView
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/ammar2"/>
+
+                <ImageView
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ammar3"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <RelativeLayout
+                android:id="@+id/rl_welcome_4"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_welcome_image_4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/rajakpp" />
+
+                <TextView
+                    android:id="@+id/tv_welcome_username_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="ra7ack"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:layout_toRightOf="@id/iv_welcome_image_4"/>
+
+                <TextView
+                    android:id="@+id/tv_welcome_bio_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_welcome_username_4"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/iv_welcome_image_4"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:text="気の済むまでい\n女をい"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@id/tv_welcome_bio_4">
+
+                    <TextView
+                        android:id="@+id/btn_welcome_follow_4"
+                        android:layout_width="80dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:text="Follow"
+                        android:textSize="13dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/white"
+                        android:padding="5dp"
+                        android:background="@drawable/bg_red_button"/>
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/dots"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/btn_welcome_follow_4"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_toRightOf="@id/rl_welcome_4">
+
+                <ImageView
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/rajak1"/>
+
+                <ImageView
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/rajak2"/>
+
+                <ImageView
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/rajak3"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="40dp"
+        android:layout_height="3dp"
+        android:background="@drawable/grey_capsule"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_rounded_button"
+        android:text="Done"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="20dp"
+        android:textSize="15dp"
+        android:padding="7dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Load more ?"
+        android:gravity="center"
+        android:layout_marginTop="7dp"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="20dp"
+        android:textSize="15dp"/>
+
+</LinearLayout>

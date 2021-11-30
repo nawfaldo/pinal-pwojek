@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.authentication.RegisterActivity">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/tv_register_title"
+        android:src="@drawable/happy_face"/>
+
+    <TextView
+        android:id="@+id/tv_register_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:text="ArtPoi"
+        android:textSize="20dp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:textColor="@color/appTheme"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_marginHorizontal="20dp"
+        android:text="You can change it anytime later"
+        android:layout_below="@id/tv_register_title"
+        android:textSize="15dp"
+        android:fontFamily="@font/ubuntu_regular"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_close"/>
+
+    <LinearLayout
+        android:id="@+id/ll_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_close"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true"
+                android:src="@color/grey" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_add"/>
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:background="@drawable/bg_textview_gray"
+            android:layout_marginHorizontal="20dp"
+            android:hint="Email" />
+
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:background="@drawable/bg_textview_gray"
+            android:layout_marginHorizontal="20dp"
+            android:hint="Username" />
+
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:background="@drawable/bg_textview_gray"
+            android:layout_marginHorizontal="20dp"
+            android:hint="Password" />
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="3dp"
+            android:background="@drawable/grey_capsule"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="By registering account\nyou've agree to our Policy"/>
+
+        <TextView
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_rounded_button"
+            android:text="Register"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="20dp"
+            android:textSize="20dp"
+            android:padding="8dp"/>
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="cancel?"-->
+<!--            android:layout_margin="5dp"/>-->
+
+    </LinearLayout>
+
+</RelativeLayout>

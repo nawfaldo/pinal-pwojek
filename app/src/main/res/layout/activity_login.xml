@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.authentication.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:src="@drawable/happy_face"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ArtPoi"
+            android:fontFamily="@font/ubuntu_bold"
+            android:textSize="30sp"
+            android:textColor="@color/appTheme"/>
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:background="@drawable/bg_textview_gray"
+            android:layout_marginHorizontal="20dp"
+            android:hint="Email" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:background="@drawable/bg_textview_gray"
+            android:layout_marginHorizontal="20dp"
+            android:hint="Password" />
+
+<!--        <View-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="3dp"-->
+<!--            android:layout_marginVertical="7dp"-->
+<!--            android:background="@drawable/grey_capsule"/>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="start">
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/bg_textview_gray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:fontFamily="@font/ubuntu_regular"
+                android:gravity="center"
+                android:text="Remember me"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+<!--        <View-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="3dp"-->
+<!--            android:layout_marginVertical="12dp"-->
+<!--            android:background="@drawable/grey_capsule"/>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="20dp">
+
+            <TextView
+                android:id="@+id/btn_to_register"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@color/grey"
+                android:text="Register ?"
+                android:gravity="end"
+                android:paddingEnd="15dp"
+                android:layout_centerInParent="true"
+                android:textColor="@color/black"
+                android:layout_alignParentEnd="true"
+                android:textSize="12dp"
+                android:paddingVertical="14dp"/>
+
+            <TextView
+                android:id="@+id/btn_to_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="80dp"
+                android:background="@drawable/bg_rounded_button"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Log In"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginVertical="12dp">
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="3dp"
+                android:background="@drawable/grey_capsule"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Or"
+                android:layout_marginHorizontal="10dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/ubuntu_regular"/>
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="3dp"
+                android:background="@drawable/grey_capsule"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_google"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_toLeftOf="@id/fab_discord"
+                android:src="@drawable/google_logo"
+                android:outlineSpotShadowColor="@color/darkGrey"
+                app:tint="@null"
+                app:borderWidth="0dp"
+                android:backgroundTint="@color/white"/>
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_discord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/discord_logo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="8dp"
+                android:outlineSpotShadowColor="@color/darkGrey"
+                app:tint="@null"
+                app:borderWidth="0dp"
+                android:backgroundTint="@color/white"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_apple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/apple_logo"
+                android:layout_marginHorizontal="8dp"
+                android:layout_toRightOf="@id/fab_discord"
+                android:outlineSpotShadowColor="@color/darkGrey"
+                app:tint="@null"
+                app:borderWidth="0dp"
+                android:backgroundTint="@color/white"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textColor="@color/appTheme"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        app:layout_constraintEnd_toStartOf="@id/divider"-->
+<!--        android:layout_marginEnd="10dp"-->
+<!--        android:text="LogIn"-->
+<!--        android:fontFamily="@font/ubuntu_regular"/>\-->
+
+<!--    <View-->
+<!--        android:id="@+id/divider"-->
+<!--        android:layout_width="1dp"-->
+<!--        android:layout_height="15dp"-->
+<!--        android:backgroundTint="@color/black"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        android:background="@drawable/grey_capsule"/>-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        app:layout_constraintStart_toEndOf="@id/divider"-->
+<!--        android:text="Register"-->
+<!--        android:fontFamily="@font/ubuntu_regular"/>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
